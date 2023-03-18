@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment API</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-lg p-5">
+        <div class="container">
+            <img src="images/logo.png" class="icon">
+          <a class="navbar-brand color-white" href="#">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="#">News</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="#">Photos</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+              
+            
+           
+            
+          </div>
+        </div>
+      </nav>
+
+      <div class="home">
+
+<form class="container find-location d-flex mb-5">
+    <input type="text" placeholder="Find your location ..." id="searchInput">
+    <button  id="findCity">Find</button>
+</form>
+
+<table class="table text-center container">
+    <thead >
+        <tr>
+            <th>
+              <div class="text-center d-flex justify-content-between" >
+                <day id="currentDay"></day>
+                <date id="currentDate"></date>
+              </div>
+            </th>
+            <th id="next"></th>
+            <th id="after"></th>
+        </tr>
+    </thead>
+    <tbody id="tableBody" class="p-4">
+                <tr>
+                    
+                    <td class="col-4 p-5" id="currentWeather">
+                    </td>
+                    <td class="col-4 p-5" id="nextDay">
+                   
+                    </td>
+                    <td class="col-4 p-5" id="dayAfter">
+                
+                    </td>
+                 
+                </tr>
+    </tbody>
+</table>
+   </div>
+
+
+  
+ 
+    <script src="js/main.js"></script>
+</body>
+
+</html>
